@@ -1,6 +1,6 @@
 package org.example.calculator;
 
-public interface IOperation {
+public interface IMathEq {
     double add(double a, double b);
     double subtract(double a, double b);
 

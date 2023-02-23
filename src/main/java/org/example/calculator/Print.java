@@ -2,12 +2,12 @@ package org.example.calculator;
 
 public class Print {
 
-    private Operation operation;
+    private MathEq mathEq;
 
     private ReadValues readValues;
 
-    public Print(Operation operation, ReadValues readValues) {
-        this.operation = operation;
+    public Print(MathEq mathEq, ReadValues readValues) {
+        this.mathEq = mathEq;
         this.readValues = readValues;
     }
 
@@ -22,10 +22,10 @@ public class Print {
 
     public void options(String option) {
         switch (option) {
-            case "1" -> System.out.println(operation.add(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
-            case "2" -> System.out.println(operation.subtract(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
-            case "3" -> System.out.println(operation.divide(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
-            case "4" -> System.out.println(operation.multiply(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
+            case "1" -> System.out.println(mathEq.add(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
+            case "2" -> System.out.println(mathEq.subtract(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
+            case "3" -> System.out.println(mathEq.divide(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
+            case "4" -> System.out.println(mathEq.multiply(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
             default -> System.out.println("Operatie invalida");
         }
     }

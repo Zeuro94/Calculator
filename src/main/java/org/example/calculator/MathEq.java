@@ -1,6 +1,6 @@
 package org.example.calculator;
 
-public class Operation implements IOperation{
+public class MathEq implements IMathEq {
     @Override
     public double add(double a, double b) {
         return a + b;
