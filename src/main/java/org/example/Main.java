@@ -16,6 +16,6 @@ public class Main {
         print.printOptions();
         Scanner scanner = new Scanner(System.in);
         String options = scanner.nextLine();
-        print.options(options);
+        print.printResults(options);
     }
 }

@@ -20,7 +20,7 @@ public class Print {
         System.out.println("4. Inmultire");
     }
 
-    public void options(String option) {
+    public void printResults(String option) {
         switch (option) {
             case "1" -> System.out.println(mathEq.add(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
             case "2" -> System.out.println(mathEq.subtract(Double.parseDouble(readValues.getFirstValue()), Double.parseDouble(readValues.getSecondValue())));
