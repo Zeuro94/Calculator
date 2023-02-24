@@ -1,4 +1,4 @@
-package org.example.calculator;
+package org.example.calculator.process;
 
 public interface IMathEq {
     double add(double a, double b);

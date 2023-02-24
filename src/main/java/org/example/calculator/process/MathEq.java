@@ -1,8 +1,8 @@
-package org.example.calculator;
+package org.example.calculator.process;
 
 public class MathEq implements IMathEq {
     @Override
-    public double add(double a, double b) {
+    public  double add(double a, double b) {
         return a + b;
     }
 
