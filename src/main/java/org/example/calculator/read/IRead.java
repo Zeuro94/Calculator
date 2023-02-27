@@ -1,5 +1,7 @@
 package org.example.calculator.read;
 
 public interface IRead {
-    String readvalue();
+    String readValue();
+
+    String readOperation();
 }
