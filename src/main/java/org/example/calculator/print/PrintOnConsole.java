@@ -1,7 +1,6 @@
 package org.example.calculator.print;
 
 
-
 public class PrintOnConsole implements IPrint {
 
     @Override

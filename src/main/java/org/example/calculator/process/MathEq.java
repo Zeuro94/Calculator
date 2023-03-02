@@ -1,24 +1,26 @@
 package org.example.calculator.process;
 
+import org.apache.commons.math3.util.ArithmeticUtils;
+
 public class MathEq implements IMathEq {
-    private double add(double a, double b) {
-        return a + b;
+    private double add(long a, long b) {
+        return ArithmeticUtils.addAndCheck(a, b);
     }
 
-    private double subtract(double a, double b) {
-        return a - b;
+    private double subtract(long a, long b) {
+        return ArithmeticUtils.subAndCheck(a, b);
     }
 
-    private double multiply(double a, double b) {
-        return a * b;
+    private double multiply(long a, long b) {
+        return ArithmeticUtils.mulAndCheck(a, b);
     }
 
-    private double divide(double a, double b) {
+    private double divide(long a, float b) {
         return a / b;
     }
 
     @Override
-    public double calculate(double a, double b, String operation) {
+    public double calculate(long a, long b, String operation) {
 
         switch (operation) {
             case "1" -> {

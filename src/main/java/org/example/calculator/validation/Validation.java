@@ -2,17 +2,14 @@ package org.example.calculator.validation;
 
 public class Validation implements IValidate {
 
-    boolean flag = true;
     @Override
-    public boolean checkIfIsAValidNumber(String value) {
-
+    public boolean tryParseLong(String numberToBeParsed) {
         try {
-            Double.parseDouble(value);
-        }
-        catch (NumberFormatException e) {
-            System.out.println("invalid number " + e.getMessage());
+            Long.parseLong(numberToBeParsed);
+            return true;
+        } catch (NumberFormatException exception) {
+            System.out.println(exception.getMessage());
             return false;
         }
-        return flag;
     }
 }
